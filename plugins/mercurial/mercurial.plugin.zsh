@@ -64,3 +64,6 @@ function hgic() {
 function hgoc() {
     hg outgoing "$@" | grep "changeset" | wc -l
 }
+
+# Remove all .orig files
+alias hgclear='find . -name "*.orig" -delete'
