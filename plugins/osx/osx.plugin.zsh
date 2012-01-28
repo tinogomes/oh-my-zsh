@@ -209,3 +209,7 @@ EOF
 	esac
 	osascript -e "tell application \"iTunes\" to $opt"
 }
+
+function lock() {
+    open -a ScreenSaverEngine
+}
