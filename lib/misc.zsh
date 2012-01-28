@@ -27,3 +27,6 @@ fi
 
 # recognize comments
 setopt interactivecomments
+
+alias reload="source ~/.zshrc"
+alias galias='alias | grep'
