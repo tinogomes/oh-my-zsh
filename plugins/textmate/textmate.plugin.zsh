@@ -20,4 +20,4 @@ function tm() {
 	fi
 }
 
-alias reload_bundles="osascript -e 'tell app \"TextMate\" to reload bundles'"
+alias reload-bundles="osascript -e 'tell app \"TextMate\" to reload bundles'"
