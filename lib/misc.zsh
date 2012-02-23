@@ -30,3 +30,5 @@ setopt interactivecomments
 
 alias reload="source ~/.zshrc"
 alias galias='alias | grep'
+
+alias ssh-list='cat ~/.ssh/config'
