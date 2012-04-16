@@ -222,3 +222,5 @@ alias gwip='git add -A; git rm $(git ls-files --deleted) 2> /dev/null; git commi
 
 # Remove from repo all files deleted
 alias gitstrm="git st | egrep 'deleted' | sed -e 's/#//' -e 's/deleted:/git rm/' | sh"
+
+alias gitgcprune="git remote prune origin ; git gc --prune --aggressive"
