@@ -2,6 +2,13 @@
 # 
 # Sintax: rspec-with <pattern>
 function rspec-with () {
+	files=($(grep -l $1 spec/*/*_spec.rb))
+	
+	for file in $files; do
+		echo '\n**********************************************************'
+		echo "rspec $file"
+		RAILS_ENV=test bundle exec rspec $file
+	done
 }
 
 # Execute all spec step by step, oh baby
