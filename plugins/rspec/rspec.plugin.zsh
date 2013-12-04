@@ -1,8 +1,11 @@
-function rspec_with () {
-	grep -l $1 spec/*/*_spec.rb | xargs rspec
+# Execure all spec that contains <pattern>
+# 
+# Sintax: rspec-with <pattern>
+function rspec-with () {
 }
 
-function rspec_all_step_by_step () {
+# Execute all spec step by step, oh baby
+function rspec-all-sbs () {
 	echo '\n**********************************************************'
 	echo 'Migration and preparing db for tests'
 	bundle exec rake db:migrate db:test:prepare
