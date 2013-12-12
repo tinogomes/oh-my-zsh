@@ -22,7 +22,7 @@ function rspec-all-sbs () {
 	do
 		echo '\n**********************************************************'
 		echo "$dirname specs"
-		RAILS_ENV=test bundle exec rspec $dirname
+		RAILS_ENV=test bundle exec rspec $* $dirname
 	done
 	
 	echo '\n**********************************************************'
@@ -31,7 +31,7 @@ function rspec-all-sbs () {
 	
 	echo '\n**********************************************************'
 	echo 'integration specs'
-	RAILS_ENV=test bundle exec rspec features/*_spec.rb
+	RAILS_ENV=test bundle exec rspec $* features/*_spec.rb
 	
 	echo
 }
