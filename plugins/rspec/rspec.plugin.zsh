@@ -6,8 +6,8 @@ function rspec-with () {
 	
 	for file in $files; do
 		echo '\n**********************************************************'
-		echo "rspec $file"
-		RAILS_ENV=test bundle exec rspec $file
+		echo "rspec $file $RSPEC_OPTIONS"
+		RAILS_ENV=test bundle exec rspec $file $RSPEC_OPTIONS || break 
 	done
 }
 
