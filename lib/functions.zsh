@@ -88,4 +88,12 @@ function pause() {
     read -s
 }
 
+function p80 () {
+    printf "%080d\n" | tr 0 "*"
+    if [ ! -z "$*" ]; then
+        echo $*
+        printf "%080d\n" | tr 0 "*"
+    fi
+}
+
 alias psg=show_processes
