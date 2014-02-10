@@ -83,4 +83,9 @@ function show_processes() {
     fi
 }
 
+function pause() {
+    echo 'Press [Enter] key to continue...'
+    read -s
+}
+
 alias psg=show_processes
