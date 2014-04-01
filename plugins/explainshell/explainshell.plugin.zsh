@@ -1,4 +1,4 @@
-function explain {
+function explain() {
   # base url with first command already injected
   # $ explain tar
   #   => http://explainshel.com/explain/tar?args=
