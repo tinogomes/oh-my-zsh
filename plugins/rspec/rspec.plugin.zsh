@@ -35,3 +35,10 @@ function rspec-all-sbs () {
 	
 	echo
 }
+
+# Execute relative specs for implementation
+function rrspec() {
+	spec_file=$(echo $1 | sed -e 's/app/spec/' -e 's/\.rb$/_spec.rb/' -e 's/_spec_spec\.rb$/_spec.rb/')
+	echo 'rspec '$spec_file
+	RAILS_ENV=test bundle exec rspec $spec_file
+}
