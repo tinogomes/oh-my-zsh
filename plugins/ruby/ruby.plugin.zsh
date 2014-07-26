@@ -10,3 +10,5 @@ encoding_file = function() {
 	sed '1i#encoding: UTF-8' $1 > /tmp/new_file.tmp
 	mv /tmp/new_file.tmp $1
 }
+
+alias "rubocop-clear=rubocop -a --only TrailingWhitespace,TrailingBlankLines,StringLiterals"
