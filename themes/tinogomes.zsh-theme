@@ -23,6 +23,10 @@ function prompt_hg_info {
 	echo ""
 }
 
+function happy_or_sad {
+	echo ":$( [[ $? == 0 ]] && echo ') ' || echo '( ' )"
+}
+
 #RVM settings
 local RVM_PROMPT=''
 
@@ -33,3 +37,5 @@ fi
 PROMPT='
 # %{$fg[yellow]%}%n%{$reset_color%}@%{$fg[cyan]%}%m%{$reset_color%}:%{$fg_bold[blue]%}%~%{$reset_color%} '$RVM_PROMPT'$(git_prompt_info)$(prompt_hg_info)
 # %_$(prompt_char) '
+
+RPROMPT='$(happy_or_sad)'
