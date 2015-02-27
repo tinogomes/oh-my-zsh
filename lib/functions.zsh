@@ -97,3 +97,4 @@ function p80 () {
 }
 
 alias psg=show_processes
+alias myip='curl -s curlmyip.com'
