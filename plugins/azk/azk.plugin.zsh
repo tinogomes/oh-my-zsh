@@ -16,5 +16,11 @@ alias aastop='azk agent stop'
 function ashell () {
   local system_name=$1
   shift
-  azk shell $system_name -c "$*"
+  local command="$*"
+
+  if [[ -n $command ]]; then
+	  azk shell $system_name -c $command
+	else
+		azk shell $system_name
+	fi
 }
