@@ -32,3 +32,5 @@ alias reload="source ~/.zshrc"
 alias galias='alias | grep'
 
 alias ssh-list='cat ~/.ssh/config'
+
+alias traling-spaces="sed -i '' 's/[[:space:]]\{1,\}$//'"
