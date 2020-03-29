@@ -12,7 +12,7 @@ alias rb="ruby"
 alias rrun='ruby -run -e'
 
 # Start local server
-alias rhttpd='ruby -run -e httpd'
+alias rbserver='ruby -run -e httpd'
 
 # Gem Command Shorthands
 alias gin="gem install"

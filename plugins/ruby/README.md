@@ -19,4 +19,4 @@ plugins=(... ruby)
 | gun    | `gem uninstall`                        | Uninstall gems from the local repository             |
 | gli    | `gem list`                             | Display gems installed locally                       |
 | rrun   | `ruby -run -e some_ruby_code_here      | Executes `some_ruby_code_here                        |
-| rhttpd | `ruby -run -e httpd`                   | Starts Webricks reading local directory              |
+| rbserver | `ruby -run -e httpd`                   | Starts Webricks reading local directory              |
