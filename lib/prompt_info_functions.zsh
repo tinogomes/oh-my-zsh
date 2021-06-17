@@ -18,6 +18,8 @@ function chruby_prompt_info \
   vi_mode_prompt_info \
   virtualenv_prompt_info \
   jenv_prompt_info \
+  tf_prompt_info \
+  kubectx_prompt_info \
 {
   return 1
 }
